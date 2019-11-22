@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0em;
+  padding: 0em;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.rijksoverheidlogo {
+  max-width: 35px;
+  display: block;
+  margin: -5px auto;
+}
+
+.digidlogo {
+  max-width: 100px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+nav img {
+  max-width: 50px;
+}
+
+.menu_stroke {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+}
+
+/* RESPONSIVE: MOBILE */
+/* Bron flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* Maken van een hamburger menu: https://www.youtube.com/watch?v=6pidsgeLLzE */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: green;
+  margin: 20px 15px;
+  font-size: 15px;
+}
+
+.menu_stroke {
+  background: black;
+  display: inline-block;
+  position: relative;
+  height: 3px;
+  width: 25px;
+}
+
+.menu_stroke::before, .menu_stroke::after {
+  background: black;
+  content: "";  /* Dit zorgt ervoor dat het wordt weergegeven op de pagina */
+  display: inline-block;
+  position: absolute; /* Absolute zorgt ervoor dat  */
+  height: 3px;
+  width: 25px;
+}
+
+/* Dit zorgt ervoor dat er 1 stroke BOVEN de middelste stroke komt van de hamburgermenu */
+.menu_stroke::before {
+  top: 6px;
+}
+
+/* Dit zorgt ervoor dat er 1 stroke ONDER de middelste stroke komt van de hamburgermenu */
+.menu_stroke::after {
+  top: -6px;
+}
+
+.flex-item_mijndigid {
+  order: 1;
+}
+
+.menu_toggle {
+  order: 2;
+}
+
+.flex-item_zoek {
+  order: 3;
+}
+
+.link, .flex-item_zoek {
+  /* display: none; */
+  width: 100%;
+  text-align: center;
+  order: 4;
+}
+
+.flex-item_zoek {
+  order: 3; /* Dit zorgt ervoor dat de bovenstaande order: 4 wordt overgeschreven door de order: 3 */
+}
+
+/* .active zorgt ervoor dat de menu klikbaar wordt in js */
+.link.active {
+  display: block;
+}
+
+/* RESPONSIVE: DESKTOP */
+
+@media all and (min-width: 1000px) {
+  .link {
+    display: block;
+    width: auto;
+  }
+
+  .menu_toggle {
+    /* display: none; */
+  }
+}
