@@ -1,0 +1,344 @@
+/******************************************************************************
+            ALGremENE STIJLING DIE NIET AANGEPAST HOEFT TE WORDEN
+******************************************************************************/
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  background-color: #F5F5F5;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+footer {
+  background-color: #282828;
+}
+
+
+/******************************************************************************
+Stijling van buttons in de aside & articles
+******************************************************************************/
+button, main aside button {
+  color: #FFFFFF;
+  background-color: #E17000;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px 0 rgba(40,40,40,.24);
+  border: none;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background-color: #D84F00;
+}
+
+
+/******************************************************************************
+Stijling van logo van DigiD en Rijksoverheid in navbar
+******************************************************************************/
+header {
+  color: #000000;
+  background-color: #FFFFFF;
+  min-width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  height: 60px;
+}
+
+header a:first-child {
+  /* padding: 5px 5px; */
+}
+
+header a img {
+  width: auto;
+  height: 50px;
+}
+
+header a:first-child {
+  margin: 5px 0 0 15px;
+  position: absolute;
+}
+
+header a:nth-child(2) {
+  margin-left: 50%;
+}
+
+header nav {
+  display: none;
+}
+
+/******************************************************************************
+Stijling voor img – vrouw met tablet & aside: "Laat zien wie je bent"
+******************************************************************************/
+main aside {
+  /* display: flex; */
+  position: absolute;
+  background-color: #E17000;
+  border-radius:0.3rem;
+  top: 250px ;
+  z-index: 1;
+  /* width: 93%; */
+  /* margin-left: 1rem; */
+  margin: 0.8125rem 1rem 1rem;
+  padding: 0.825rem 1rem 1rem;
+  /* margin: 1rem 1rem 1rem; */
+  /* padding: 0.8125rem 1rem 1rem; */
+}
+
+
+main img:first-child {
+  position: relative;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+main aside button {
+  color: #E17000;
+  background-color: #FFFFFF;
+}
+
+main aside button:hover {
+  color: #D84F00;
+  background-color: #FFFFFF;
+}
+
+/*"Laat zien wie je bent"*/
+h2 {
+  color: #FFFFFF;
+}
+
+
+/******************************************************************************
+Stijling voor articles in de sections
+******************************************************************************/
+/* Kopjes van de articles */
+h3 {
+  color: #E17000;
+  background-color: transparent;
+}
+
+section article {
+  background-color: #FFFFFF;
+  margin: 0.8125rem 1rem 1rem;
+  padding: 0.8125rem 1rem 1rem;
+  border-radius: 0.3rem;
+}
+
+/* Stijling voor linkjes van de articles: "Meer informatie >" */
+article a {
+  color: #E17000;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+article a:hover {
+  color: #D84F00;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+/* Stijling voor h4 linkjes in article: "Manieren van inloggen" */
+article a h4 {
+  text-decoration: underline;
+}
+
+article a h4:hover {
+  color: #E78A40;
+}
+
+/* Stijling voor iconen in de articles */
+section article img {
+  /* width: 45px; */
+  /* width: 2.5rem; */
+}
+
+/* Stijling voor section 5: "Veel gezocht" */
+section:nth-child(5) {
+  margin: 0.8125rem 1rem 1rem;
+  padding: 0.8125rem 1rem 1rem;
+  border-radius: 0.3rem;
+}
+
+section:nth-child(5) h3 {
+  color: #000000;
+}
+
+section:nth-child(5) ul {
+  line-height: 3rem;
+  list-style-type: none;
+}
+
+section:nth-child(5) ul li {
+  font-size: 1rem;
+  border-top: 0.0625rem solid #D3D3D3;
+  margin: auto;
+}
+
+section:nth-child(5) ul li:last-child {
+  border-bottom: 0.0625rem solid #D3D3D3;
+  margin: auto;
+}
+
+section:nth-child(5) ul li a {
+  text-decoration: none;
+}
+
+/******************************************************************************
+Stijling voor footer
+******************************************************************************/
+
+/* stijling voor nav-kopjes */
+h5 {
+  color: #FFFFFF;
+}
+
+/* Stijling voor linkjes in de nav van de footer */
+footer nav ul li a {
+  color: #FFFFFF;
+}
+
+
+/******************************************************************************
+                                MOBILE HEADER
+******************************************************************************/
+
+/******************************************************************************
+Stijling voor navigatiebalk
+******************************************************************************/
+.nav-balk {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+
+/******************************************************************************
+Stijling van hamburger menu
+******************************************************************************/
+div {
+  /* background: blue; */
+  position: relative;
+  display: flex;
+  align-items: center;
+	width: 0.8rem;
+	height: 0.85rem;
+  margin-top: 1.2rem;
+  margin-right: 1.6rem;
+}
+
+/* Stijling voor middelste lijn van hamburger menu */
+span {
+  background: black;
+  display: block;
+	height: 0.1rem;
+	width: 0.9rem;
+}
+
+/* Stijling voor lijnen boven en onder de middelste span van hamburger menu */
+span::before, span::after {
+  background-color: black;
+  background: black;
+  position: absolute;
+	content: "";
+	height: 0.13rem;
+	width: 100%;
+}
+
+/* Stijling voor onderste lijn van hamburger menu */
+span::before {
+	top: 0.7rem;
+}
+
+span::after {
+	bottom: 0.67rem;
+}
+
+
+/******************************************************************************
+Stijling voor header a 2: logo rijksoverheid
+******************************************************************************/
+
+
+/******************************************************************************
+                                MOBILE MAIN
+******************************************************************************/
+
+main img {
+  width: 100%;
+
+}
+
+main aside img {
+  display: none;
+  width: 80px;
+}
+
+
+/******************************************************************************
+                                 MOBILE FOOTER
+******************************************************************************/
+
+
+
+/******************************************************************************
+                                 TABLET HEADER
+******************************************************************************/
+
+
+
+/******************************************************************************
+                                 TABLET MAIN
+******************************************************************************/
+
+main aside img {
+  /* max-width: 80px; */
+}
+
+
+
+
+/******************************************************************************
+                                TABLET FOOTER
+******************************************************************************/
+
+
+
+/******************************************************************************
+                                DESKTOP HEADER
+******************************************************************************/
+
+
+
+/******************************************************************************
+                                 DESKTOP MAIN
+******************************************************************************/
+
+
+
+/******************************************************************************
+                                DESKTOP FOOTER
+******************************************************************************/
